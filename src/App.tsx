@@ -9,6 +9,7 @@ import {
   RefreshCw, Info, HelpCircle, HardDrive, Cpu, Settings, Activity, ArrowRight, Plus,
   Menu
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 import Sidebar from './components/Sidebar';
 import KanbanBoard from './components/KanbanBoard';
@@ -435,7 +436,7 @@ export default function App() {
                   🚀 TRÌNH TRIỂN KHAI SẢN XUẤT DỰ ÁN RKIX
                 </h3>
                 <p className="text-xs text-zinc-500 leading-relaxed font-sans max-w-xl">
-                  Nhấp vào đây để biên dịch mã nguồn, chạy linter, đồng bộ hóa cache đóng gói Container và cập nhật hệ thống sản xuất thực tế.
+                  Nhấp vào đây để biên dịch mã nguồn, chạy linter, đồng bộ hóa cache đóng gói Container và cập nhật hệ thống s��n xuất thực tế.
                 </p>
               </div>
               
@@ -458,7 +459,7 @@ export default function App() {
                 </span>
                 <h3 className="text-sm font-bold text-zinc-900 tracking-tight mt-1">Hệ thống chuyển giao: Sẵn Sàng Vận Hành</h3>
                 <p className="text-xs text-zinc-500 font-sans leading-relaxed max-w-xl">
-                  Mô hình liên chuỗi: <strong className="text-indigo-600">Human Intent</strong> &rarr; <strong className="text-indigo-600">LLM Planner</strong> &rarr; <strong className="text-indigo-600">Code Generator</strong> &rarr; <strong className="text-indigo-600">Self-healing</strong> đang được vận hành đồng bộ độc lập trên nền tảng Cloud Run container.
+                  Mô hình liên chu��i: <strong className="text-indigo-600">Human Intent</strong> &rarr; <strong className="text-indigo-600">LLM Planner</strong> &rarr; <strong className="text-indigo-600">Code Generator</strong> &rarr; <strong className="text-indigo-600">Self-healing</strong> đang được vận hành đồng bộ độc lập trên nền tảng Cloud Run container.
                 </p>
               </div>
               <button 
@@ -732,6 +733,8 @@ export default function App() {
         />
       )}
 
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
