@@ -1,0 +1,8 @@
+{
+  "name": "RKix",
+  "description": "An autonomous software factory console with interactive Kanban boards, real-time metrics telemetry, and an unified smart developer agent nicknamed RKix 🐼.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
